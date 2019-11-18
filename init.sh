@@ -61,6 +61,10 @@ echo 'Installing apache-airflow'
 pip install apache-airflow
 echo ''
 
+echo 'Installing psycopg2'
+pip install psycopg2
+echo ''
+
 echo 'Initiating database'
 airflow initdb
 rm ./airflow/airflow.db
