@@ -25,7 +25,7 @@ dropdb $DATABASE
 dropuser $USERNAME
 echo ''
 echo 'Creating User, and Database for Airflow'
-./create_postgresql_user/init.sh -u $USERNAME -p $PASSWORD -d $DATABASE
+./Airflow/create_postgresql_user/init.sh -u $USERNAME -p $PASSWORD -d $DATABASE
 echo '...'
 echo '...'
 echo ''
