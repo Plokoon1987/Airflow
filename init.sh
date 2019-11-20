@@ -66,9 +66,8 @@ pip install psycopg2
 echo ''
 
 echo 'Initiating database'
-#airflow initdb
-#rm ./airflow/airflow.db
-airflow
+airflow initdb
+rm ./airflow/airflow.db
 cp ./Airflow/modified_files/airflow.cfg ./airflow/
 airflow initdb
 echo ''
